@@ -7,7 +7,8 @@ fi
 
 # User specific aliases and functions
 alias ls='ls -lh --color=auto'
-alias gitpp='git pull && git push'
+#alias gitpp='git pull && git push'
+alias gitpp='git fetch && git rebase -i origin/master && git push origin +HEAD'
 alias htop='TERM=screen htop'
 alias bzip2='pbzip2'
 alias bunzip2='pbunzip2'
